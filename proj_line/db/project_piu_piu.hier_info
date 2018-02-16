@@ -1,6 +1,7 @@
 |top_file
 clk_10MHz_o <= spi_master:inst.sclk
-clock_in => PLL:inst1.inclk0
+clock_in => PLL:inst13.inclk0
+UART_RX => async_receiver:inst9.RxD
 clk_10MHz_adc_i => spi_master:inst.miso
 signal_to_diods <= spi_master:inst.ss_n[0]
 clock_10_temp <= spi_master:inst.mosi
@@ -529,7 +530,7 @@ rx_data[14] <= rx_data[14]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rx_data[15] <= rx_data[15]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|top_file|PLL:inst1
+|top_file|PLL:inst13
 inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 c1 <= altpll:altpll_component.clk
@@ -538,9 +539,9 @@ c3 <= altpll:altpll_component.clk
 locked <= altpll:altpll_component.locked
 
 
-|top_file|PLL:inst1|altpll:altpll_component
-inclk[0] => PLL_altpll6:auto_generated.inclk[0]
-inclk[1] => PLL_altpll6:auto_generated.inclk[1]
+|top_file|PLL:inst13|altpll:altpll_component
+inclk[0] => PLL_altpll7:auto_generated.inclk[0]
+inclk[1] => PLL_altpll7:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
 pllena => ~NO_FANOUT~
 clkswitch => ~NO_FANOUT~
@@ -585,7 +586,7 @@ enable1 <= <GND>
 enable0 <= <GND>
 activeclock <= <GND>
 clkloss <= <GND>
-locked <= PLL_altpll6:auto_generated.locked
+locked <= PLL_altpll7:auto_generated.locked
 scandataout <= <GND>
 scandone <= <GND>
 sclkout0 <= <GND>
@@ -598,7 +599,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|top_file|PLL:inst1|altpll:altpll_component|PLL_altpll6:auto_generated
+|top_file|PLL:inst13|altpll:altpll_component|PLL_altpll7:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2
@@ -609,10 +610,50 @@ inclk[1] => pll1.CLK1
 locked <= pll1.LOCKED
 
 
-|top_file|spi_control:inst10
+|top_file|spi_control:inst8
+clk_150MHz_i => enable_start.CLK
+clk_150MHz_i => rx_uart_data_temp[0].CLK
+clk_150MHz_i => rx_uart_data_temp[1].CLK
+clk_150MHz_i => rx_uart_data_temp[2].CLK
+clk_150MHz_i => rx_uart_data_temp[3].CLK
+clk_150MHz_i => rx_uart_data_temp[4].CLK
+clk_150MHz_i => rx_uart_data_temp[5].CLK
+clk_150MHz_i => rx_uart_data_temp[6].CLK
+clk_150MHz_i => rx_uart_data_temp[7].CLK
+clk_150MHz_i => rx_ready_flag.CLK
 clk_150MHz_i => enable_temp.CLK
 reset => enable_temp.OUTPUTSELECT
+reset => enable_start.ENA
+reset => rx_uart_data_temp[0].ENA
+reset => rx_uart_data_temp[1].ENA
+reset => rx_uart_data_temp[2].ENA
+reset => rx_uart_data_temp[3].ENA
+reset => rx_uart_data_temp[4].ENA
+reset => rx_uart_data_temp[5].ENA
+reset => rx_uart_data_temp[6].ENA
+reset => rx_uart_data_temp[7].ENA
+reset => rx_ready_flag.ENA
 busy => enable_temp.OUTPUTSELECT
+busy => rx_ready_flag.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => rx_uart_data_temp.OUTPUTSELECT
+busy => enable_start.OUTPUTSELECT
+busy => always0.IN1
+rx_uart_data[0] => rx_uart_data_temp.DATAB
+rx_uart_data[1] => rx_uart_data_temp.DATAB
+rx_uart_data[2] => rx_uart_data_temp.DATAB
+rx_uart_data[3] => rx_uart_data_temp.DATAB
+rx_uart_data[4] => rx_uart_data_temp.DATAB
+rx_uart_data[5] => rx_uart_data_temp.DATAB
+rx_uart_data[6] => rx_uart_data_temp.DATAB
+rx_uart_data[7] => rx_uart_data_temp.DATAB
+rx_ready => rx_ready_flag.OUTPUTSELECT
 clk_div[0] <= <VCC>
 clk_div[1] <= <GND>
 clk_div[2] <= <GND>
@@ -685,15 +726,63 @@ tx_data[4] <= <GND>
 tx_data[5] <= <GND>
 tx_data[6] <= <GND>
 tx_data[7] <= <GND>
-tx_data[8] <= <VCC>
-tx_data[9] <= <GND>
-tx_data[10] <= <VCC>
-tx_data[11] <= <GND>
-tx_data[12] <= <VCC>
-tx_data[13] <= <VCC>
-tx_data[14] <= <VCC>
-tx_data[15] <= <VCC>
+tx_data[8] <= rx_uart_data_temp[0].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[9] <= rx_uart_data_temp[1].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[10] <= rx_uart_data_temp[2].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[11] <= rx_uart_data_temp[3].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[12] <= rx_uart_data_temp[4].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[13] <= rx_uart_data_temp[5].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[14] <= rx_uart_data_temp[6].DB_MAX_OUTPUT_PORT_TYPE
+tx_data[15] <= rx_uart_data_temp[7].DB_MAX_OUTPUT_PORT_TYPE
 enable <= enable_temp.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_file|async_receiver:inst9
+clk => clk.IN1
+RxD => RxD_sync[0].DATAIN
+RxD_data_ready <= RxD_data_ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[0] <= RxD_data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[1] <= RxD_data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[2] <= RxD_data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[3] <= RxD_data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[4] <= RxD_data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[5] <= RxD_data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[6] <= RxD_data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_data[7] <= RxD_data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RxD_idle <= GapCnt[5].DB_MAX_OUTPUT_PORT_TYPE
+RxD_endofpacket <= RxD_endofpacket~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|top_file|async_receiver:inst9|BaudTickGen:tickgen
+clk => Acc[0].CLK
+clk => Acc[1].CLK
+clk => Acc[2].CLK
+clk => Acc[3].CLK
+clk => Acc[4].CLK
+clk => Acc[5].CLK
+clk => Acc[6].CLK
+clk => Acc[7].CLK
+clk => Acc[8].CLK
+clk => Acc[9].CLK
+clk => Acc[10].CLK
+clk => Acc[11].CLK
+clk => Acc[12].CLK
+clk => Acc[13].CLK
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+enable => Acc.OUTPUTSELECT
+tick <= Acc[13].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |top_file|ALTSERIAL_FLASH_LOADER:inst22

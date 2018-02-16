@@ -1,15 +1,15 @@
 <?xml version="1.0" ?>
 <LOG_ROOT>
 	<PROJECT NAME="project_piu_piu">
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|PLL:inst1|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll6.v"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_m9j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|PLL:inst13|altpll:altpll_component" CBX_FILE_NAME="PLL_altpll7.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_dvf.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_23j.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|ALTSERIAL_FLASH_LOADER:inst22|alt_sfl:\DEFAULT_PGM:sfl_inst|lpm_counter:bit_counter" CBX_FILE_NAME="cntr_sfi.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_ela_control:ela_control|sld_ela_trigger_flow_sel:\generated:ela_trigger_flow_mgr_entity" CBX_FILE_NAME="sld_ela_trigger_flow_sel_ef41.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_advance_pointer_counter" CBX_FILE_NAME="cntr_ggi.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_f424.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altsyncram:\stp_non_zero_ram_gen:stp_buffer_ram" CBX_FILE_NAME="altsyncram_l124.tdf"/>
 		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_mux:mux" CBX_FILE_NAME="mux_tsc.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_iii.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|altdpram:\stp_non_zero_ram_gen:attribute_mem_gen:attribute_mem|lpm_decode:wdecoder" CBX_FILE_NAME="decode_dvf.tdf"/>
-		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:status_read_pointer_counter" CBX_FILE_NAME="cntr_23j.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:\adv_point_3_and_more:advance_pointer_counter" CBX_FILE_NAME="cntr_0hi.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|top_file|sld_signaltap:auto_signaltap_0|sld_signaltap_impl:sld_signaltap_body|sld_signaltap_implb:sld_signaltap_body|sld_offload_buffer_mgr:\stp_non_zero_depth_offload_gen:stp_offload_buff_mgr_inst|lpm_counter:read_pointer_counter" CBX_FILE_NAME="cntr_m9j.tdf"/>
 	</PROJECT>
 </LOG_ROOT>

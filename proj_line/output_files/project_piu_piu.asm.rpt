@@ -1,5 +1,5 @@
 Assembler report for project_piu_piu
-Wed Feb 14 21:33:51 2018
+Fri Feb 16 15:09:11 2018
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
 
 
@@ -11,7 +11,7 @@ Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/gitt/SPI_MEMS/SPI_MEMS/proj_line/output_files/project_piu_piu.sof
+  6. Assembler Device Options: E:/GITHUB/SPI_MEMS/proj_line/output_files/project_piu_piu.sof
   7. Assembler Messages
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Feb 14 21:33:51 2018 ;
+; Assembler Status      ; Successful - Fri Feb 16 15:09:11 2018 ;
 ; Revision Name         ; project_piu_piu                       ;
 ; Top-level Entity Name ; top_file                              ;
 ; Family                ; Cyclone IV E                          ;
@@ -65,24 +65,24 @@ agreement for further details.
 +--------+------------------------+--------------+
 
 
-+----------------------------------------------------------------------+
-; Assembler Generated Files                                            ;
-+----------------------------------------------------------------------+
-; File Name                                                            ;
-+----------------------------------------------------------------------+
-; C:/gitt/SPI_MEMS/SPI_MEMS/proj_line/output_files/project_piu_piu.sof ;
-+----------------------------------------------------------------------+
++---------------------------------------------------------------+
+; Assembler Generated Files                                     ;
++---------------------------------------------------------------+
+; File Name                                                     ;
++---------------------------------------------------------------+
+; E:/GITHUB/SPI_MEMS/proj_line/output_files/project_piu_piu.sof ;
++---------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/gitt/SPI_MEMS/SPI_MEMS/proj_line/output_files/project_piu_piu.sof ;
-+----------------+-------------------------------------------------------------------------------+
-; Option         ; Setting                                                                       ;
-+----------------+-------------------------------------------------------------------------------+
-; Device         ; EP4CE22F17C6                                                                  ;
-; JTAG usercode  ; 0x002A3E9F                                                                    ;
-; Checksum       ; 0x002A3E9F                                                                    ;
-+----------------+-------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: E:/GITHUB/SPI_MEMS/proj_line/output_files/project_piu_piu.sof ;
++----------------+------------------------------------------------------------------------+
+; Option         ; Setting                                                                ;
++----------------+------------------------------------------------------------------------+
+; Device         ; EP4CE22F17C6                                                           ;
+; JTAG usercode  ; 0x0023E14B                                                             ;
+; Checksum       ; 0x0023E14B                                                             ;
++----------------+------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -91,13 +91,13 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 14.0.0 Build 200 06/17/2014 SJ Full Version
-    Info: Processing started: Wed Feb 14 21:33:48 2018
+    Info: Processing started: Fri Feb 16 15:09:08 2018
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off project_piu_piu -c project_piu_piu
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 507 megabytes
-    Info: Processing ended: Wed Feb 14 21:33:51 2018
+    Info: Peak virtual memory: 511 megabytes
+    Info: Processing ended: Fri Feb 16 15:09:11 2018
     Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
