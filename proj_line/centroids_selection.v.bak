@@ -1,0 +1,59 @@
+
+module centroids_selection   (input clk_200MHz_i,
+										input [32:0] centroid_in,
+										input start_selection,
+										input reset,
+										output clken,
+										output read_fifo,
+										output aclr_fifo,
+										output centroid_data_out,
+										output centroid_out );
+	
+reg start_selection_flag,read_fifo_flag,reset_flag,centroid_out_flag=0;
+reg [9:0] count, count_within_group = 10'd0;
+reg [32:0] data_buf, data_buf_next,data_buf_next1,data_buf_next2,data_buf_next3, data_centr_group, data_centr_group_finish=33'd0;
+reg signed [33:0] data_compare=0;
+always @( posedge clk_200MHz_i) begin
+
+if(reset)
+reset_flag<=1;
+
+else begin
+
+if(start_selection)
+start_selection_flag<=1;
+
+if(start_selection_flag) begin
+read_fifo_flag<=1;
+count <= count + 1'b1;
+
+//data_conc <= {quot,remain[20:18]}; // вынести в отдельный модуль перед записью в  фифо
+data_buf <= centroid_in;
+data_buf_next <= data_buf;
+data_buf_next1<=data_buf_next;
+data_buf_next2<=data_buf_next1;
+data_buf_next3<=data_buf_next2;
+if(count>=2)
+data_compare<= data_buf_next-data_buf;
+
+if((data_compare>(-10)) && (data_compare<10)) begin
+data_centr_group_finish<=0;
+data_centr_group<=data_centr_group+data_buf;
+count_within_group<=count_within_group+1;
+end
+else begin
+data_centr_group_finish<=1;
+count_within_group<=0;
+data_centr_group<=0;
+centroid_out_flag<=1;
+end
+end
+end
+end
+
+assign centroid_out=centroid_out_flag;
+assign centroid_data_out = data_centr_group_finish;
+
+
+				
+endmodule

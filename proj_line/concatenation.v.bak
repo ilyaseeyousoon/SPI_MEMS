@@ -1,0 +1,8 @@
+module concatenation   (
+										input [29:0] quot,
+										input [29:0] rem,
+										output centroid_out );
+										
+										
+										
+endmodule

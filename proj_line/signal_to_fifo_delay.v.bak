@@ -1,0 +1,14 @@
+module signal_to_fifo_delay   (			
+										input clk_200MHz_i,
+										input centroid_flag_fifo_in,
+										output centroid_flag_fifo_out );
+										
+
+
+	
+
+
+
+	
+assign rdreq=0;										
+endmodule

@@ -1,0 +1,16 @@
+module UART_logic(
+                        input [7:0] DATA,
+                        input CLK,
+                        input Rdy,
+                        output reg TX =1
+                        );
+								
+								
+								
+								
+								
+								
+								
+								
+								
+endmodule							

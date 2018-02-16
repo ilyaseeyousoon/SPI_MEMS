@@ -1,0 +1,10 @@
+module ADC_model   (
+										input [29:0] quot,
+										input [20:0] rem,
+										output centroid_out );
+										
+										
+					
+
+					
+endmodule

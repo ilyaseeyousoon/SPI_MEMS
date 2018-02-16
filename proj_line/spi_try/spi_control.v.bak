@@ -1,0 +1,12 @@
+module spi (
+    input clk,
+    input rst,
+    output enable
+  );
+  
+  
+  
+  
+  
+  
+  endmodule

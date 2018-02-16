@@ -1,0 +1,24 @@
+module data_from_adc  ( input clk_10MHz_adc_i,
+								input clk_200MHz_i,
+								input clk_ADC_valid,
+								input reset_after_end_frame,
+								input [15:0] ADC_data_16bit,
+								input reset, 
+								output write_data_valid,
+								output [15:0] ADC_data_16bit_out
+								);
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+								
+endmodule

@@ -1,0 +1,61 @@
+module signal_stm  ( input clk_200MHz_i,
+							input clk_5MHz_i,
+							input reset,
+							input stm_signal,
+							input signal_to_diods_request,
+							output signal_to_diods  );
+							
+							
+/*
+1. Сброс производится по сигналу резет или переполнению счетчика,форирующего длительность 
+импульса на линейку фотодиодов
+
+2. По запросу stm_signal с МК или signal_to_diods_request с другого модуля(какого?)
+выставляется флаг request_count. Этот флаг выставляет в 1 выходной сигнал signal_to_diods и держится 
+до тех пор, пока не счетчик count не станет равен 7.
+
+3. После сброса счетчика,request_count и сигнала на выходе,
+ожидается новый запрос
+*/ 
+reg request_count=0;
+reg [3:0] count=4'b0000;
+reg signal_to_diods_temp=0;
+reg reset_request_after_count=0;
+always @(posedge clk_200MHz_i)
+begin
+if(reset || reset_request_after_count)
+begin
+request_count<=0;
+end
+else 
+begin
+if(stm_signal || signal_to_diods_request)
+request_count<=1;
+end
+end  
+
+always @(posedge clk_5MHz_i)
+begin 
+if(request_count==0)
+reset_request_after_count<=0;
+
+if(request_count)
+begin
+if(count!=4'd8)
+begin
+count<=count+1'b1;
+signal_to_diods_temp=1;
+end
+else
+begin
+count<=4'b0000;
+signal_to_diods_temp<=0;
+reset_request_after_count<=1;
+end
+end
+end //always @(posedge clk_5MHz_i)
+
+
+assign signal_to_diods=signal_to_diods_temp;
+
+endmodule

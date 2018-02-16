@@ -1,0 +1,14 @@
+Partition Merge Status : Successful - Thu Oct 26 18:55:30 2017
+Quartus II 64-Bit Version : 14.0.0 Build 200 06/17/2014 SJ Full Version
+Revision Name : project_piu_piu
+Top-level Entity Name : top_file
+Family : Cyclone IV E
+Total logic elements : 8,803
+    Total combinational functions : 5,094
+    Dedicated logic registers : 6,649
+Total registers : 6649
+Total pins : 33
+Total virtual pins : 0
+Total memory bits : 167,108
+Embedded Multiplier 9-bit elements : 10
+Total PLLs : 1

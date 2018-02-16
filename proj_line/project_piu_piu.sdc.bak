@@ -1,0 +1,2 @@
+create_clock -name clk50 -period 20 [get_ports {clk50}]
+set_input_delay -clock { clk50 } -max 10.25 [get_ports *]

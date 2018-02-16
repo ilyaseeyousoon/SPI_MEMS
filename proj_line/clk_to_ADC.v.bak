@@ -1,0 +1,3 @@
+module clk_to_ADC  (input clk_5MHz_i,output [15:0] n );
+
+endmodule

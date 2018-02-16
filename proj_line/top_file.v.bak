@@ -1,0 +1,149 @@
+// Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// PROGRAM		"Quartus II 64-Bit"
+// VERSION		"Version 14.0.0 Build 200 06/17/2014 SJ Full Version"
+// CREATED		"Thu Jul 13 21:39:35 2017"
+
+module top_file(
+	pin_name1,
+	pin_name2,
+	pin_name3,
+	stm_signal,
+	reset,
+	clk_10MHz_adc_i,
+	AD_sp_signal,
+	AD_trig_signal,
+	ADC_data,
+	clk_10MHz_o,
+	signal_to_diods
+);
+
+
+input wire	pin_name1;
+input wire	pin_name2;
+input wire	pin_name3;
+input wire	stm_signal;
+input wire	reset;
+input wire	clk_10MHz_adc_i;
+input wire	AD_sp_signal;
+input wire	AD_trig_signal;
+input wire	[15:0] ADC_data;
+output wire	clk_10MHz_o;
+output wire	signal_to_diods;
+
+wire	[15:0] data;
+wire	[15:0] dataadc;
+wire	[15:0] q;
+wire	SYNTHESIZED_WIRE_0;
+wire	SYNTHESIZED_WIRE_15;
+wire	SYNTHESIZED_WIRE_2;
+wire	SYNTHESIZED_WIRE_3;
+wire	SYNTHESIZED_WIRE_16;
+wire	SYNTHESIZED_WIRE_5;
+wire	SYNTHESIZED_WIRE_8;
+wire	[20:0] SYNTHESIZED_WIRE_9;
+wire	[29:0] SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_12;
+wire	SYNTHESIZED_WIRE_13;
+
+
+
+
+
+window	b2v_inst(
+	.clk_200MHz_i(pin_name1),
+	.rdempty(SYNTHESIZED_WIRE_0),
+	.start_treatment(SYNTHESIZED_WIRE_15),
+	.reset(reset),
+	.window_input(q),
+	.clken(SYNTHESIZED_WIRE_8),
+	.read_fifo(SYNTHESIZED_WIRE_12),
+	.aclr_fifo(SYNTHESIZED_WIRE_13),
+	.denominator(SYNTHESIZED_WIRE_9),
+	.numerator(SYNTHESIZED_WIRE_10));
+
+
+signal_stm	b2v_inst1(
+	.clk_200MHz_i(pin_name1),
+	.clk_5MHz_i(pin_name2),
+	.reset(reset),
+	.stm_signal(stm_signal),
+	.signal_to_diods_request(SYNTHESIZED_WIRE_2),
+	.signal_to_diods(signal_to_diods));
+
+
+data_from_adc	b2v_inst2(
+	.clk_10MHz_adc_i(clk_10MHz_adc_i),
+	.clk_200MHz_i(pin_name1),
+	.clk_ADC_valid(SYNTHESIZED_WIRE_3),
+	.reset_after_end_frame(SYNTHESIZED_WIRE_16),
+	.reset(reset),
+	.ADC_data_16bit(dataadc),
+	.write_data_valid(SYNTHESIZED_WIRE_11),
+	.reset_after_end_frame_request_out(SYNTHESIZED_WIRE_15),
+	.ADC_data_16bit_out(data));
+
+
+clk_to_ADC	b2v_inst4(
+	.clk_20MHz_i(pin_name3),
+	.clock_to_ADC_req(SYNTHESIZED_WIRE_5),
+	.reset(reset),
+	.reset_after_end_frame(SYNTHESIZED_WIRE_16),
+	.clk_ADC_valid(SYNTHESIZED_WIRE_3),
+	.clk_10MHz_o(clk_10MHz_o));
+
+
+reset_after_end_frame_module	b2v_inst5(
+	.clk_200MHz_i(pin_name1),
+	.reset_after_end_frame_request_out(SYNTHESIZED_WIRE_15),
+	.reset(reset),
+	.mass_reset_after_frame(SYNTHESIZED_WIRE_16),
+	.signal_to_diods_request(SYNTHESIZED_WIRE_2));
+
+
+divider_bb_bb	b2v_inst6(
+	.clock(pin_name1),
+	.clken(SYNTHESIZED_WIRE_8),
+	.denom(SYNTHESIZED_WIRE_9),
+	.numer(SYNTHESIZED_WIRE_10)
+	
+	);
+
+
+FIFO_ADC	b2v_inst7(
+	.wrreq(SYNTHESIZED_WIRE_11),
+	.wrclk(clk_10MHz_adc_i),
+	.rdreq(SYNTHESIZED_WIRE_12),
+	.rdclk(pin_name1),
+	.aclr(SYNTHESIZED_WIRE_13),
+	.data(data),
+	
+	.rdempty(SYNTHESIZED_WIRE_0),
+	.q(q));
+
+
+AD_sp_AD_trig_wait	b2v_inst8(
+	.clk_200MHz_i(pin_name1),
+	.AD_sp_signal(AD_sp_signal),
+	.AD_trig_signal(AD_trig_signal),
+	.reset(reset),
+	.reset_after_end_frame(SYNTHESIZED_WIRE_16),
+	.clock_to_ADC_req(SYNTHESIZED_WIRE_5));
+
+assign	dataadc = ADC_data;
+
+endmodule

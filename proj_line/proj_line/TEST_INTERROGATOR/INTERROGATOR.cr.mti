@@ -1,0 +1,15 @@
+clk_to_ADC_tb.v {1 {vlog -work INTERROGATOR -vopt F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_to_ADC_tb.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module clk_to_ADC_tb
+
+Top level modules:
+	clk_to_ADC_tb
+
+} {} {}} F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v {1 {vlog -work INTERROGATOR -vopt F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v
+Model Technology ModelSim SE-64 vlog 10.1c Compiler 2012.07 Jul 27 2012
+-- Compiling module clk_to_ADC
+
+Top level modules:
+	clk_to_ADC
+
+} {} {}}

@@ -1,0 +1,6 @@
+
+State Machine - |top_file|uart_tx:inst14|state
+Name state.IDLE state.TRANS state.START 
+state.IDLE 0 0 0 
+state.START 1 0 1 
+state.TRANS 1 1 0 

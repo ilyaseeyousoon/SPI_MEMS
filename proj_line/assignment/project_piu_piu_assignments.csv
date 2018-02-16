@@ -1,0 +1,66 @@
+# Copyright (C) 1991-2014 Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus II License Agreement,
+# the Altera MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Altera and sold by Altera or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+
+# Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Full Version
+# File: F:\QUARTUS_14\14.0\variants_project\interrogator(21.07)\interrogator(08.07)\interrogator\proj_line\assignment\project_piu_piu_assignments.csv
+# Generated on: Wed Jul 26 18:15:51 2017
+
+Status,From,To,Assignment Name,Value,Enabled,Entity,Comment,Tag
+'To' name unrecognized,,key0,Location,PIN_J15,Yes,,fix,
+'To' name unrecognized,,leds[0],Location,PIN_A15,Yes,,fix,
+'To' name unrecognized,,leds[1],Location,PIN_A13,Yes,,fix,
+'To' name unrecognized,,leds[2],Location,PIN_B13,Yes,,fix,
+'To' name unrecognized,,leds[3],Location,PIN_A11,Yes,,fix,
+'To' name unrecognized,,leds[4],Location,PIN_D1,Yes,,fix,
+'To' name unrecognized,,leds[5],Location,PIN_F3,Yes,,fix,
+'To' name unrecognized,,leds[6],Location,PIN_B1,Yes,,fix,
+'To' name unrecognized,,leds[7],Location,PIN_L3,Yes,,fix,
+'To' name unrecognized,,key1,Location,PIN_E1,Yes,,fix,
+'To' name unrecognized,,rdclk,Location,PIN_C9,Yes,,L24,
+'To' name unrecognized,,clock_in,Location,PIN_R8,Yes,,fix,
+'To' name unrecognized,,rdempty,Location,PIN_E9,Yes,,L23,
+'To' name unrecognized,,rdreq,Location,PIN_D9,Yes,,L25,
+'To' name unrecognized,,wrfull,Location,PIN_F9,Yes,,L22,
+'To' name unrecognized,,rdusedw[7],Location,PIN_B12,Yes,,L33,
+'To' name unrecognized,,rdusedw[6],Location,PIN_D12,Yes,,L32,
+'To' name unrecognized,,rdusedw[5],Location,PIN_D11,Yes,,L31,
+'To' name unrecognized,,rdusedw[4],Location,PIN_A12,Yes,,L30,
+'To' name unrecognized,,rdusedw[3],Location,PIN_B11,Yes,,L29,
+'To' name unrecognized,,rdusedw[2],Location,PIN_C11,Yes,,L28,
+'To' name unrecognized,,rdusedw[1],Location,PIN_E10,Yes,,L27,
+'To' name unrecognized,,rdusedw[0],Location,PIN_E11,Yes,,L26,
+'To' name unrecognized,,AD_sp_signal,Location,PIN_D3,Yes,,L0,
+'To' name unrecognized,,AD_trig_signal,Location,PIN_C3,Yes,,L1,
+'To' name unrecognized,,ADC_data[0],Location,PIN_A2,Yes,,L2,
+'To' name unrecognized,,ADC_data[1],Location,PIN_A3,Yes,,L3,
+'To' name unrecognized,,ADC_data[2],Location,PIN_B3,Yes,,L4,
+'To' name unrecognized,,ADC_data[3],Location,PIN_B4,Yes,,L5,
+'To' name unrecognized,,ADC_data[4],Location,PIN_A4,Yes,,L6,
+'To' name unrecognized,,ADC_data[5],Location,PIN_B5,Yes,,L7,
+'To' name unrecognized,,ADC_data[6],Location,PIN_A5,Yes,,L8,
+'To' name unrecognized,,ADC_data[7],Location,PIN_D5,Yes,,L9,
+'To' name unrecognized,,ADC_data[8],Location,PIN_B6,Yes,,L10,
+'To' name unrecognized,,ADC_data[9],Location,PIN_A6,Yes,,L11,
+'To' name unrecognized,,ADC_data[10],Location,PIN_B7,Yes,,L12,
+'To' name unrecognized,,ADC_data[11],Location,PIN_D6,Yes,,L13,
+'To' name unrecognized,,ADC_data[12],Location,PIN_A7,Yes,,L14,
+'To' name unrecognized,,ADC_data[13],Location,PIN_C6,Yes,,L15,
+'To' name unrecognized,,ADC_data[14],Location,PIN_C8,Yes,,L16,
+'To' name unrecognized,,ADC_data[15],Location,PIN_E6,Yes,,L17,
+'To' name unrecognized,,stm_signal,Location,PIN_E7,Yes,,L18,
+'To' name unrecognized,,signal_to_diods,Location,PIN_D8,Yes,,L19,
+'To' name unrecognized,,clk_10MHz_adc_i,Location,PIN_E8,Yes,,L20,
+'To' name unrecognized,,clk_10MHz_o,Location,PIN_F8,Yes,,L21,
+,<<new>>,<<new>>,<<new>>,,,,,

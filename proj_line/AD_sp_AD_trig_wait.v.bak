@@ -1,0 +1,23 @@
+module AD_sp_AD_trig_wait  (input clk_200MHz_i,output [15:0] n );
+
+
+reg AD_sp_valid = 0;
+reg clock_to_ADC_req_temp = 0;
+
+always @(clk_200MHz_i)
+begin
+if (reset)
+AD_sp_valid = 0;
+clock_to_ADC_req_temp = 0;
+else
+
+if (AD_sp_signal)
+AD_sp_valid = 1;
+
+if (AD_sp_valid || AD_trig_signal)
+clock_to_ADC_req_temp = 1;
+
+assign clock_to_ADC_req = clock_to_ADC_req_temp;
+
+end
+endmodule

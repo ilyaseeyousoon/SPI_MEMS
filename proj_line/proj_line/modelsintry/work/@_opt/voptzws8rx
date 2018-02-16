@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+dF:\QUARTUS_14\modelsim\win64
+T_opt
+VUW?MbmWCd@zl7eAHlUaRT2
+04 11 4 work firsttry_tb fast 0
+=1-bc5ff41d3692-595bf118-67-16e4
+o-quiet -auto_acc_if_foreign -work work +acc
+n@_opt
+OL;O;10.1c;51
+vfirsttry
+!s100 :9MjJd[Tke;Z2R4>WMRfR3
+IEoO?FE3UaAKXbMIU1;lVU0
+V<6UD22^Djfi7Z67W_f8;Z1
+Z0 dF:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry
+w1499196467
+8F:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry\firsttry.v
+FF:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry\firsttry.v
+L0 1
+Z1 OL;L;10.1c;51
+r1
+31
+!s90 -reportprogress|300|-work|work|-vopt|F:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry\firsttry.v|
+Z2 o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s108 1499196469.596000
+!s107 F:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry\firsttry.v|
+!i10b 1
+!s85 0
+vfirsttry_tb
+IESm4;BZF_9nFGHQ>P4KmL1
+VmUeWno0gIA_a<1NHYlO]]0
+Z3 dF:\QUARTUS_14\14.0\proj_line\proj_line\modelsintry
+w1499197226
+8firsttry_tb.v
+Ffirsttry_tb.v
+L0 1
+R1
+r1
+31
+R2
+!i10b 1
+!s100 `P8jLUXOORJ`3Ed:@8L0o1
+!s85 0
+!s108 1499197226.585000
+!s107 firsttry_tb.v|
+!s90 -reportprogress|300|-work|work|firsttry_tb.v|

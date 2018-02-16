@@ -1,0 +1,20 @@
+catch {
+vlib "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_ver"
+vmap altera_ver "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_ver"
+vlog -work altera_ver -vlog01compat "c:/quartus/14.0/quartus/eda/sim_lib/altera_primitives.v" 
+vlib "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/lpm_ver"
+vmap lpm_ver "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/lpm_ver"
+vlog -work lpm_ver -vlog01compat "c:/quartus/14.0/quartus/eda/sim_lib/220model.v" 
+vlib "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/sgate_ver"
+vmap sgate_ver "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/sgate_ver"
+vlog -work sgate_ver -vlog01compat "c:/quartus/14.0/quartus/eda/sim_lib/sgate.v" 
+vlib "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_mf_ver"
+vmap altera_mf_ver "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_mf_ver"
+vlog -work altera_mf_ver -vlog01compat "c:/quartus/14.0/quartus/eda/sim_lib/altera_mf.v" 
+vlib "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_lnsim_ver"
+vmap altera_lnsim_ver "C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/verilog_libs/altera_lnsim_ver"
+vlog -work altera_lnsim_ver -sv "c:/quartus/14.0/quartus/eda/sim_lib/altera_lnsim.sv" 
+quit -f
+} result
+puts "Library compilation terminated due to error in compilation( $result )"
+quit -f

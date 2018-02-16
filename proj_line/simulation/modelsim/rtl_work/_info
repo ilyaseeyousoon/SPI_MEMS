@@ -1,0 +1,141 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\quartus\14.0\versions\interrogator(07.07)\interrogator(06.07)\interrogator\proj_line\simulation\modelsim
+vAD_sp_AD_trig_wait
+IN5KRDi9Jo?iLn=?<ScPb<3
+VHHID;WN>o<[JjD5X29Q``0
+Z1 dC:\quartus\14.0\versions\interrogator(07.07)\interrogator(06.07)\interrogator\proj_line\simulation\modelsim
+Z2 w1499344013
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/AD_sp_AD_trig_wait.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/AD_sp_AD_trig_wait.v
+L0 1
+Z3 OL;L;10.1c;51
+r1
+31
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+Z5 !s92 -vlog01compat -work work +incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+n@a@d_sp_@a@d_trig_wait
+!i10b 1
+!s100 eKA[Jb7gV`SZIY:Zc:`zC1
+!s85 0
+!s108 1499434442.969000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/AD_sp_AD_trig_wait.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/AD_sp_AD_trig_wait.v|
+vclk_to_ADC
+I3iejIPl3L4;V^Ij]Y?fkN3
+V>:OVb7>SZKRj2XXRLm?LG0
+R1
+R2
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/clk_to_ADC.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/clk_to_ADC.v
+L0 1
+R3
+r1
+31
+R4
+R5
+nclk_to_@a@d@c
+!i10b 1
+!s100 Q^ZQA;TY@?;6[>g0i^mmR0
+!s85 0
+!s108 1499434442.817000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/clk_to_ADC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/clk_to_ADC.v|
+vdata_from_adc
+Ig1jiFVm7F1dhY30QV<O<;1
+VZ]AjLPdH@29??OZCB1XN91
+R1
+w1499371402
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/data_from_adc.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/data_from_adc.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 VRma>gH=BFoYCW5<zjS_83
+!s85 0
+!s108 1499434443.023000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/data_from_adc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/data_from_adc.v|
+vFIFO_ADC
+IREkCAP]CiPNejdNQmY3V51
+V=1UaO2OVC3zB:f=?B;@B<2
+R1
+w1499186745
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC/FIFO_ADC.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC/FIFO_ADC.v
+L0 40
+R3
+r1
+31
+R4
+n@f@i@f@o_@a@d@c
+!i10b 1
+!s100 RXP7If^9[EN;7kHP^ZafZ3
+!s85 0
+!s108 1499434442.891000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC/FIFO_ADC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC/FIFO_ADC.v|
+!s92 -vlog01compat -work work +incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/FIFO_ADC -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vsignal_stm
+Id7;MFE0Y[CoL<k@=TVUP@0
+VAaeLO7L4W__2Ech<gE8J70
+R1
+w1499428067
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/signal_stm.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/signal_stm.v
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 iOAXD3:]WUd]e]Q7O0X`31
+!s85 0
+!s108 1499434442.765000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/signal_stm.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/signal_stm.v|
+vtop_file_vlg_tst
+!i10b 1
+!s100 9ZeSSM7KPH23lINT_50731
+IBB[1i4nRG@U1IEjgXTb;P0
+V@6gDDkV]g=4Loc20@B4fR1
+R1
+w1499434041
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim/top_file.vt
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim/top_file.vt
+L0 29
+R3
+r1
+!s85 0
+31
+!s108 1499434443.163000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim/top_file.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim/top_file.vt|
+R4
+!s92 -vlog01compat -work work +incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/simulation/modelsim -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+vwindow
+IffeLc^Z@MVOl5bTaAmYCO1
+V@]9?U6eQHQiJVgJB2Tli@2
+R1
+w1499184842
+8C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/window.v
+FC:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/window.v
+L0 2
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 IRJk7HnYAK4J8;<k60mWQ2
+!s85 0
+!s108 1499434442.709000
+!s107 C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/window.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line|C:/quartus/14.0/versions/interrogator(07.07)/interrogator(06.07)/interrogator/proj_line/window.v|

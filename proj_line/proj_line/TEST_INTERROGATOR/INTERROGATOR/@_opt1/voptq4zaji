@@ -1,0 +1,58 @@
+m255
+K3
+13
+cModel Technology
+Z0 dF:\QUARTUS_14\modelsim\win64
+T_opt
+VJ38@T459nQH9DS7mQ8UNe3
+04 13 4 work clk_to_ADC_tb fast 0
+=1-bc5ff41d3692-595c02ea-25a-28ac
+o-quiet -auto_acc_if_foreign -work INTERROGATOR
+n@_opt
+Z1 OL;O;10.1c;51
+Z2 dF:\QUARTUS_14\modelsim\win64
+T_opt1
+V^68k==eR@P1BE:NO9l_mW3
+04 10 4 work clk_to_ADC fast 0
+=1-bc5ff41d3692-595c06a2-1f8-162c
+o-quiet -auto_acc_if_foreign -work INTERROGATOR +acc
+n@_opt1
+R1
+vclk_to_ADC
+IJ1=RbT761Sj^gbT`MDj<g2
+V2TVGKABEkE1zlO=nMg^VH1
+Z3 dF:\QUARTUS_14\14.0\proj_line\proj_line\TEST_INTERROGATOR
+w1499203081
+8F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v
+FF:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v
+L0 1
+Z4 OL;L;10.1c;51
+r1
+31
+Z5 o-work INTERROGATOR -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+nclk_to_@a@d@c
+!s90 -reportprogress|300|-work|INTERROGATOR|-vopt|F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v|
+!s100 CGlEjli[?c8U]^mj`dFE?2
+!s108 1499203081.806000
+!s107 F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_ADC.v|
+!i10b 1
+!s85 0
+vclk_to_ADC_tb
+IBndQ;9Z?<OZ[I3b`8SLO32
+VK<X5Z^bX7Z4GmBcS964510
+R3
+w1499203155
+8F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_to_ADC_tb.v
+FF:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_to_ADC_tb.v
+L0 1
+R4
+r1
+31
+R5
+nclk_to_@a@d@c_tb
+!i10b 1
+!s100 kfAUhA:>GZ5YQ[LXeKK`]2
+!s85 0
+!s108 1499203210.286000
+!s107 F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_to_ADC_tb.v|
+!s90 -reportprogress|300|-work|INTERROGATOR|-vopt|F:/QUARTUS_14/14.0/proj_line/proj_line/TEST_INTERROGATOR/clk_to_ADC_tb.v|

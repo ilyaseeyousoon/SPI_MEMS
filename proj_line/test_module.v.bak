@@ -1,0 +1,39 @@
+module test_module  ( input clk_150MHz_i,
+							input clk_10MHz_i,
+							input reset,
+							input stm_signal,
+							input signal_to_diods_request,
+							output signal_to_diods  );
+							
+							
+
+ 
+
+
+always @(posedge clk_150MHz_i) begin
+
+if(reset) begin
+
+end
+else begin
+
+if(rdusedw==517 ) begin
+start_test_algoritm<=1;
+end
+
+
+
+
+
+end  
+
+always @(posedge clk_20MHz_i )
+if(request_clock)
+ clk_10MHz_o_temp <= !clk_10MHz_o_temp ;
+else
+ clk_10MHz_o_temp <=  0 ;
+ 
+
+
+
+endmodule

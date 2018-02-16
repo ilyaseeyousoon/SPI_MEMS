@@ -1,0 +1,12 @@
+<interfaceDefinition version='1.2' language='verilog' kind='module' name='firsttry'>
+    <portList>
+
+      <port name='clk_200MHz_i' direction='input' type='' kind=''> </port>
+      <port name='clk_5MHz_i' direction='input' type='' kind=''> </port>
+      <port name='reset' direction='input' type='' kind=''> </port>
+      <port name='stm_signal' direction='input' type='' kind=''> </port>
+      <port name='signal_to_diods_request' direction='input' type='' kind=''> </port>
+      <port name='signal_to_diods' direction='output' type='' kind=''> </port>
+
+    </portList>
+</interfaceDefinition>
