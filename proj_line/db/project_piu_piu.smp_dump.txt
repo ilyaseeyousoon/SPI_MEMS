@@ -1,6 +1,7 @@
 
-State Machine - |top_file|uart_tx:inst14|state
-Name state.IDLE state.TRANS state.START 
-state.IDLE 0 0 0 
-state.START 1 0 1 
-state.TRANS 1 1 0 
+State Machine - |top_file|spi_control:inst8|count_uart_data
+Name count_uart_data.011 count_uart_data.010 count_uart_data.001 count_uart_data.000 
+count_uart_data.000 0 0 0 0 
+count_uart_data.001 0 0 1 1 
+count_uart_data.010 0 1 0 1 
+count_uart_data.011 1 0 0 1 

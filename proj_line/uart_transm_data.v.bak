@@ -1,0 +1,20 @@
+module uart_transm_data (
+    input clk,
+	 input reset,
+	 input busy,
+	 input  [16:0]rx_uart_data,
+	 input rx_ready,
+	 output [7:0]tx_data ,
+    output enable
+  );
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  endmodule
